@@ -1,0 +1,101 @@
+body{
+  background-color: #fefae0;
+}
+
+
+// navbar
+#navigation{
+  margin-bottom: 25px;
+}
+
+.navbar{
+  background-color: #e9edc9;
+}
+
+// diets index page
+.container{
+  max-width: 700px;
+}
+
+h1{
+  margin-top: 15px;
+  color: #445c55;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+  
+.diets li.list-group-item{
+  margin: 5px;
+  height: 70px;
+  background-color: #ccd5ae;
+}
+
+.diets li a{
+  text-decoration: none;
+  color: #586d67;
+  font-size: 20px;
+  
+}
+
+.diets li a:hover{
+  color: #33413d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// .background-img{
+//   background: asset-url("background.png");
+//   background-repeat: no-repeat;
+//   background-position: bottom 0px right 7px;
+// }
+
+// jumbotron
+
+// diet form
+.form-container {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e9edc9;
+  padding: 40px 25px 40px 25px;
+  border: 1px solid #cdd3a9e1;
+  border-radius: 7px;
+}
+
+label{
+  font-size: 19px;
+}
+
+/* button */
+.button-39 {
+  background-color: #ccd5ae;
+  border: 1px solid #a6af8a;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-39:hover {
+  background-color: #b2bd90;
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
