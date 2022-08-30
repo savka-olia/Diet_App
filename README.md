@@ -1,24 +1,25 @@
-# README
+# Diet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-* Ruby version
+## General info
+The application allows the user to create their own diets, as well as track the calorie content of food consumed during the day.
 
-* System dependencies
+## Technologies
+Project is created with:
+* ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) -v 3.0.2
+* ![Rails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white) -v 7.0.3
 
-* Configuration
 
-* Database creation
+## Setup
+To run this project, clone the repo and run:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ cd ../diet-application
+$ bundle install
+$ rails db:migrate
+```
