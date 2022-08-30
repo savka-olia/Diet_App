@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "home/index"  
   root to: "home#index"
+  resources :diets
 end

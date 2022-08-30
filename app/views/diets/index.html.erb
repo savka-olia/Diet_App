@@ -1,0 +1,20 @@
+<div id="background-img" class="background-img" >
+  <div class="container text-center">
+    <h1 class="mb-4 text-center">My Diets:</h1>
+    <ul class="list-group diets mx-auto text-light">
+      <% @diets.each do |diet| %>
+        <li class="list-group-item d-flex justify-content-between">
+          <%= link_to diet.title, diet_path(diet) %>
+          <div class="diet-buttons">
+            <%= link_to edit_diet_path(diet) do %>
+              <i class="bi bi-pencil"></i>
+            <% end %>
+            <%= link_to diet, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <i class="bi bi-trash3"></i>
+            <% end %>
+          </div>
+        </li>    
+      <% end %>
+    </ul>
+  </div>
+</div>

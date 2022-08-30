@@ -1,0 +1,17 @@
+<div class="form-container shadow">
+	<h2 class="text-center">New Diet</h2>
+  <%= form_with model: @diet do |f| %>
+		<div class="form-outline mb-4">
+				<%= f.label :title, class:"form-label" %><br />
+        <%= f.text_field :title, placeholder: "Diet Name", class: "form-control" %>
+		</div>
+    <div class="form-outline mb-4">
+				<%= f.label :date, "Date:" %>
+        <%= f.text_field :date, type:"date" %>
+    </div>
+    <div class="form-btns text-center d-flex justify-content-center">
+      <%= f.submit "Save", class: "button-39" %> <br />
+      <%= link_to "Cancel", diets_path, class: "button-39 mx-2" %>
+    </div>
+  <% end %>
+</div>
