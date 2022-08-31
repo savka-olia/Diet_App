@@ -3,8 +3,8 @@ class DietsController < ApplicationController
   before_action :set_diet, only: [:show, :edit, :update, :destroy]
 
   def index
-    @diets = Diet.all
-    authorize @diets
+    # @diets = current_user.diets.build
+    @diets = policy_scope(Diet)
   end
 
   def show
@@ -49,7 +49,6 @@ class DietsController < ApplicationController
   private
   def diet_params
     params.require(:diet).permit(:title, :date, :user_id)
-    authorize @diet
   end
 
   def set_diet
