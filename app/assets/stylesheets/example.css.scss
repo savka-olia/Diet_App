@@ -1,7 +1,21 @@
-body{
-  background-color: #fefae0;
+html, 
+body {
+    height: 100%;
 }
 
+body{
+  background-color: #fefae0;
+  background-image: asset-url("5912.png");
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+
+// background image
+.background-img{
+
+}
 
 // navbar
 #navigation{
@@ -10,6 +24,23 @@ body{
 
 .navbar{
   background-color: #e9edc9;
+}
+
+.navbar-nav{
+  font-size: 18px;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+  background-color: #e9edc9; 
+}
+
+
+.logo-image{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
 }
 
 // diets index page
