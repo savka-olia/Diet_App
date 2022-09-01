@@ -4,17 +4,11 @@ body {
 }
 
 body{
-  background-color: #fefae0;
-  background-image: asset-url("5912.png");
-  background-size: 800px 500px;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
-
-
-// background image
-.background-img{
-
+  background-color: #fffbf8;
+  // background-image: asset-url("5912.png");
+  // background-size: 800px 500px;
+  // background-repeat: no-repeat;
+  // background-position: bottom right;
 }
 
 // navbar
@@ -23,15 +17,20 @@ body{
 }
 
 .navbar{
-  background-color: #e9edc9;
+  background-color: #fffbf8;
 }
 
 .navbar-nav{
-  font-size: 18px;
+  font-size: 20px;
+
 }
 
 .navbar-nav > li > .dropdown-menu { 
-  background-color: #e9edc9; 
+  background-color: #fffbf8;
+}
+
+.nav-link{
+  color: #5a55a5;
 }
 
 
@@ -50,7 +49,7 @@ body{
 
 h1{
   margin-top: 15px;
-  color: #445c55;
+  color: #5a55a5;
   font-family: 'Mochiy Pop One', sans-serif;
 }
 
@@ -58,75 +57,117 @@ h1{
 .diets li.list-group-item{
   margin: 5px;
   height: 70px;
-  background-color: #ccd5ae;
+  background-color: #ff55bea1;
 }
 
 .diets li a{
   text-decoration: none;
-  color: #586d67;
+  color: #fefef9; 
   font-size: 20px;
   
 }
 
 .diets li a:hover{
-  color: #33413d;
+  color: #5a55a5;
   text-decoration: none;
   cursor: pointer;
 }
 
-// .background-img{
-//   background: asset-url("background.png");
-//   background-repeat: no-repeat;
-//   background-position: bottom 0px right 7px;
-// }
+.background-img{
+  // background: asset-url("background.png");
+  // background-repeat: no-repeat;
+  // background-position: bottom 0px right 7px;
+}
 
 // jumbotron
 
 // diet form
+
+
 .form-container {
   max-width: 550px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e9edc9;
+  background-color:  #eaf4f4;
   padding: 40px 25px 40px 25px;
-  border: 1px solid #cdd3a9e1;
+  border: 1px solid #c2d4d4;
   border-radius: 7px;
+  color: #000000;
 }
 
 label{
   font-size: 19px;
 }
 
-/* button */
-.button-39 {
-  background-color: #ccd5ae;
-  border: 1px solid #a6af8a;
-  border-radius: .5rem;
+// header
+.header{
+  margin: 10px;
+}
+.header-img{
+  max-width: 600px;
+  padding-left: 10px;
+}
+
+.text{
+  padding-top: 6em;
+  padding-left: 15px;
+}
+
+.header-btns{
+  padding-left: 7px;
+  padding-top: 10px;
+}
+
+.text h2 {
+  font-size: 46px;
+  padding-bottom: 4px;
+  color: #ff55bf;
+}
+
+.text p {
+  font-size: 20px;
+  color:#5a55a5;
+  padding: 15px;
+}
+
+/* CSS */
+.button-81 {
+  background-color: #ff55bf;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
   box-sizing: border-box;
-  color: #111827;
-  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.25rem;
-  padding: .75rem 1rem;
-  text-align: center;
-  text-decoration: none #D1D5DB solid;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: #fffbf8;
   cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.button-39:hover {
-  background-color: #b2bd90;
+.button-81:hover {
+  background-color: #5a55a5;
+  color: #fffbf8;
 }
 
-.button-39:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
 }
 
-.button-39:focus-visible {
-  box-shadow: none;
+// footer
+footer{
+  background-color: #5a55a5;
+  // height: 80px;
+  margin-top: auto;
 }

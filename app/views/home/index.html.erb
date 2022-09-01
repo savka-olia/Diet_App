@@ -1,12 +1,15 @@
-
-<div class="p-5 text-center">
-  <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);">
-    <div class="d-flex justify-content-center align-items-center h-100">
-      <div class="text-white">
-        <h1 class="mb-3">Heading</h1>
-        <h4 class="mb-3">Subheading</h4>
-        <%= link_to "My Diets", diets_path, class:"btn btn-outline-light btn-lg" %>
-      </div>
+<div class="header d-flex">
+  <div class="header-info">
+    <div class="text"> 
+      <h2 class="index text-center">Diet Tracker</h2>
+      <p class="text-center">Helps you to calculate daily calorie needs and allow you to log what you eat throughout the day.</p>
     </div>
+    <div class="header-btns d-flex justify-content-center">
+      <%= link_to "My Diets", diets_path, class:"button-81 mx-2" %>
+      <%= link_to "Create Diet", new_diet_path, class:"button-81" %>
+    </div>
+  </div>
+  <div class="header-image">
+    <%= image_tag("9268.png", :alt => "header img", class:"header-img") %>
   </div>
 </div>
